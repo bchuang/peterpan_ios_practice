@@ -12,3 +12,11 @@ Default "Main.storyboard" include 3 Scene and 2 Segue
     2.Relationship Segue  "view controllers" to "Second"
 
 It looks very clear and simple for switch view by using tab bar(footer)
+
+STEP：
+1.Create a New Xcode Project
+![Image text](https://github.com/bchuang/peterpan_ios_practice/blob/master/md_Images/Lesson1_Practice6_0.png)
+2.select iOS -> Application -> Tabbed APP
+![Image text](https://github.com/bchuang/peterpan_ios_practice/blob/master/md_Images/Lesson1_Practice6_1.png)
+![Image text](https://github.com/bchuang/peterpan_ios_practice/blob/master/md_Images/Lesson1_Practice6_2.png)
+![Image text](https://github.com/bchuang/peterpan_ios_practice/blob/master/md_Images/Lesson1_Practice6_3.png)
