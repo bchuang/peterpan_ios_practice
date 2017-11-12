@@ -12,6 +12,8 @@
 		CC6182531FB800FA003C9E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6182511FB800FA003C9E86 /* Main.storyboard */; };
 		CC6182551FB800FA003C9E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6182541FB800FA003C9E86 /* Assets.xcassets */; };
 		CC6182581FB800FA003C9E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6182561FB800FA003C9E86 /* LaunchScreen.storyboard */; };
+		CC6182631FB80BDA003C9E86 /* GuessNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6182621FB80BDA003C9E86 /* GuessNumber.storyboard */; };
+		CC6182661FB80CCC003C9E86 /* GuessNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6182651FB80CCC003C9E86 /* GuessNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CC6182541FB800FA003C9E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC6182571FB800FA003C9E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC6182591FB800FA003C9E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6182621FB80BDA003C9E86 /* GuessNumber.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GuessNumber.storyboard; sourceTree = "<group>"; };
+		CC6182651FB80CCC003C9E86 /* GuessNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		CC61824C1FB800FA003C9E86 /* Lesson6-Practice2 */ = {
 			isa = PBXGroup;
 			children = (
+				CC6182641FB80C64003C9E86 /* GuessNumber */,
 				CC61824D1FB800FA003C9E86 /* AppDelegate.swift */,
 				CC61824F1FB800FA003C9E86 /* ViewController.swift */,
 				CC6182511FB800FA003C9E86 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				CC6182591FB800FA003C9E86 /* Info.plist */,
 			);
 			path = "Lesson6-Practice2";
+			sourceTree = "<group>";
+		};
+		CC6182641FB80C64003C9E86 /* GuessNumber */ = {
+			isa = PBXGroup;
+			children = (
+				CC6182621FB80BDA003C9E86 /* GuessNumber.storyboard */,
+				CC6182651FB80CCC003C9E86 /* GuessNumberViewController.swift */,
+			);
+			path = GuessNumber;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6182631FB80BDA003C9E86 /* GuessNumber.storyboard in Resources */,
 				CC6182581FB800FA003C9E86 /* LaunchScreen.storyboard in Resources */,
 				CC6182551FB800FA003C9E86 /* Assets.xcassets in Resources */,
 				CC6182531FB800FA003C9E86 /* Main.storyboard in Resources */,
@@ -137,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC6182501FB800FA003C9E86 /* ViewController.swift in Sources */,
+				CC6182661FB80CCC003C9E86 /* GuessNumberViewController.swift in Sources */,
 				CC61824E1FB800FA003C9E86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
