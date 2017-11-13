@@ -14,6 +14,7 @@
 		CC6182581FB800FA003C9E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6182561FB800FA003C9E86 /* LaunchScreen.storyboard */; };
 		CC6182631FB80BDA003C9E86 /* GuessNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6182621FB80BDA003C9E86 /* GuessNumber.storyboard */; };
 		CC6182661FB80CCC003C9E86 /* GuessNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6182651FB80CCC003C9E86 /* GuessNumberViewController.swift */; };
+		CC6182681FB81072003C9E86 /* GuessNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6182671FB81072003C9E86 /* GuessNumberTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CC6182591FB800FA003C9E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC6182621FB80BDA003C9E86 /* GuessNumber.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GuessNumber.storyboard; sourceTree = "<group>"; };
 		CC6182651FB80CCC003C9E86 /* GuessNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberViewController.swift; sourceTree = "<group>"; };
+		CC6182671FB81072003C9E86 /* GuessNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				CC6182621FB80BDA003C9E86 /* GuessNumber.storyboard */,
 				CC6182651FB80CCC003C9E86 /* GuessNumberViewController.swift */,
+				CC6182671FB81072003C9E86 /* GuessNumberTableViewCell.swift */,
 			);
 			path = GuessNumber;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6182681FB81072003C9E86 /* GuessNumberTableViewCell.swift in Sources */,
 				CC6182501FB800FA003C9E86 /* ViewController.swift in Sources */,
 				CC6182661FB80CCC003C9E86 /* GuessNumberViewController.swift in Sources */,
 				CC61824E1FB800FA003C9E86 /* AppDelegate.swift in Sources */,
