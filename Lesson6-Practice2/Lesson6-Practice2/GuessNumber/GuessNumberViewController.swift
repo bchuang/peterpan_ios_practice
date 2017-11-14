@@ -18,18 +18,17 @@ class GuessNumberViewController: UIViewController {
     @IBOutlet weak var GuessNumberTextField: UITextField!
     @IBOutlet weak var GuessNumberLabel: UILabel!
     @IBOutlet weak var GuessNumberTableView: UITableView!
-    
-    
+
     var guessNumberSize = 4
     var randomGuessNumber = ""
     var guessNumberList: [GuessNumberInfo]?
+    var isShowAnswer: Bool = false
     
     //MARK: Action - Button
     @IBAction func Back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    //MARK: IBAction
     @IBAction func NewGame(_ sender: Any) {
         newGame()
     }
@@ -41,6 +40,8 @@ class GuessNumberViewController: UIViewController {
         }
         GuessNumberTableView.reloadData()
     }
+    
+    //MARK: View - Initial
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -78,6 +79,7 @@ class GuessNumberViewController: UIViewController {
         randomGuessNumber = String(randomFeed.nextInt())
         GuessNumberTextField.text = ""
         GuessNumberTableView.reloadData()
+        SubmitButton.isEnabled = false
     }
     
     func validateGuessNumber(number: String) -> GuessNumberInfo {
@@ -103,20 +105,9 @@ class GuessNumberViewController: UIViewController {
         result.status = currentPlaceValueCnt == guessNumberSize
         return result
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
 }
 
 // MARK: UITableView
-
 extension GuessNumberViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let list = guessNumberList {
@@ -135,29 +126,30 @@ extension GuessNumberViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let numberString = isShowAnswer ? "  Number:\(randomGuessNumber)" : ""
         if let list = guessNumberList {
-            return "Number:\(randomGuessNumber), Count:\(list.count)"
+            return "Count:\(list.count) \(numberString)"
         }
-        return "Number:\(randomGuessNumber), Count:\(0) "
+        return "Count:\(0) \(numberString) "
     }
 }
 
 // MARK: UITextField
-
 extension GuessNumberViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == GuessNumberTextField {
             guard let text = textField.text else { return true }
             let newLength = text.characters.count + string.characters.count - range.length
-            return newLength <= 4 // Bool
+            
+            if newLength == guessNumberSize {
+                SubmitButton.isEnabled = true
+            }
+            else {
+                SubmitButton.isEnabled = false
+            }
+            
+            return newLength <= guessNumberSize // Bool
         }
         return true
     }
-}
-
-
-class GuessNumberInfo {
-    var guessNumber: String?
-    var guessResult: String?
-    var status: Bool?
 }
