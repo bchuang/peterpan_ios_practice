@@ -13,6 +13,7 @@
 		CC0EEA1C1FBDAAA700AB0FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0EEA1B1FBDAAA700AB0FB9 /* Assets.xcassets */; };
 		CC0EEA1F1FBDAAA700AB0FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0EEA1D1FBDAAA700AB0FB9 /* LaunchScreen.storyboard */; };
 		CC0EEA271FBDB8FB00AB0FB9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EEA261FBDB8FB00AB0FB9 /* SecondViewController.swift */; };
+		CC0EEA291FBDC04900AB0FB9 /* testData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EEA281FBDC04900AB0FB9 /* testData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CC0EEA1E1FBDAAA700AB0FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC0EEA201FBDAAA700AB0FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC0EEA261FBDB8FB00AB0FB9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CC0EEA281FBDC04900AB0FB9 /* testData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CC0EEA1D1FBDAAA700AB0FB9 /* LaunchScreen.storyboard */,
 				CC0EEA201FBDAAA700AB0FB9 /* Info.plist */,
 				CC0EEA261FBDB8FB00AB0FB9 /* SecondViewController.swift */,
+				CC0EEA281FBDC04900AB0FB9 /* testData.swift */,
 			);
 			path = Lesson8;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				CC0EEA271FBDB8FB00AB0FB9 /* SecondViewController.swift in Sources */,
 				CC0EEA171FBDAAA700AB0FB9 /* ViewController.swift in Sources */,
 				CC0EEA151FBDAAA700AB0FB9 /* AppDelegate.swift in Sources */,
+				CC0EEA291FBDC04900AB0FB9 /* testData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

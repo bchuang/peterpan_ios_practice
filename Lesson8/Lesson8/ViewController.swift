@@ -11,12 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     
 //    var arr = [1,2,3,4,5]
-    var dic =
-        [
-            ["id":"1","name":"ray"],
-            ["id":"2","name":"ben"],
-            ["id":"3","name":"ken"],
-        ]
+//    var dic =
+//        [
+//            ["id":"1","name":"ray"],
+//            ["id":"2","name":"ben"],
+//            ["id":"3","name":"ken"],
+//        ]
+    
+    var testDatas = [testData]()
     
     var selectedIndexPath: IndexPath?
     
@@ -36,6 +38,11 @@ class ViewController: UIViewController {
     func initView() {
         firstTableView.delegate = self
         firstTableView.dataSource = self
+        
+        for i in 1...3 {
+            let item = testData(id: String(i), name: "ray\(i)")
+            testDatas.append(item)
+        }
     }
 }
 
@@ -47,7 +54,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = dic[indexPath.row]["id"]
+        cell.textLabel?.text = ("\(dic[indexPath.row]["id"] ?? ""):\(dic[indexPath.row]["name"] ?? "")")
         
         return cell
     }
