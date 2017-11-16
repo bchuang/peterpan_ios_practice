@@ -71,7 +71,7 @@ extension ViewController {
         if segue.identifier == "secondSegue" {
             if let vc = segue.destination as? SecondViewController {
                 if let row = selectedIndexPath?.row {
-                    vc.data = dic[row]["name"]
+                    vc.data = testDatas[indexPath.row].name
                 }
             }
         }
