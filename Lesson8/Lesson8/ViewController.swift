@@ -49,12 +49,12 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dic.count
+        return testDatas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = ("\(dic[indexPath.row]["id"] ?? ""):\(dic[indexPath.row]["name"] ?? "")")
+        cell.textLabel?.text = ("\(testDatas[indexPath.row].id ?? ""):\(testDatas[indexPath.row].name ?? "")")
         
         return cell
     }
