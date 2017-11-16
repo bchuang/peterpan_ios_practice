@@ -54,7 +54,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = ("\(testDatas[indexPath.row].id ?? ""):\(testDatas[indexPath.row].name ?? "")")
+        cell.textLabel?.text = ("\(testDatas[indexPath.row].id ):\(testDatas[indexPath.row].name)")
         
         return cell
     }
@@ -66,12 +66,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+//MARK: UIStoryboardSegue
+
 extension ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "secondSegue" {
             if let vc = segue.destination as? SecondViewController {
                 if let row = selectedIndexPath?.row {
-                    vc.data = testDatas[indexPath.row].name
+                    vc.data = testDatas[row].name
                 }
             }
         }
