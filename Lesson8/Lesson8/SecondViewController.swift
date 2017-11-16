@@ -1,0 +1,41 @@
+//
+//  SecondViewController.swift
+//  Lesson8
+//
+//  Created by Chuang Boris on 16/11/2017.
+//  Copyright © 2017 Chuang Boris. All rights reserved.
+//
+
+import UIKit
+
+class SecondViewController: UIViewController {
+
+    var data: Int?
+    @IBOutlet weak var secondLabel: UILabel!
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+
+        if let str = data {
+            secondLabel.text = String(str)
+        }
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
