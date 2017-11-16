@@ -10,7 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var arr = [1,2,3,4,5]
+//    var arr = [1,2,3,4,5]
+    var dic =
+        [
+            ["id":"1","name":"ray"],
+            ["id":"2","name":"ben"],
+            ["id":"3","name":"ken"],
+        ]
+    
     var selectedIndexPath: IndexPath?
     
     @IBOutlet weak var firstTableView: UITableView!
@@ -35,12 +42,12 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arr.count
+        return dic.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = String(arr[indexPath.row])
+        cell.textLabel?.text = dic[indexPath.row]["id"]
         
         return cell
     }
@@ -57,7 +64,7 @@ extension ViewController {
         if segue.identifier == "secondSegue" {
             if let vc = segue.destination as? SecondViewController {
                 if let row = selectedIndexPath?.row {
-                    vc.data = Int(arr[row])
+                    vc.data = dic[row]["name"]
                 }
             }
         }

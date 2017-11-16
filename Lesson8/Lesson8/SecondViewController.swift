@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    var data: Int?
+    var data: String?
     @IBOutlet weak var secondLabel: UILabel!
     
     override func viewDidLoad() {
@@ -18,7 +18,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
 
         if let str = data {
-            secondLabel.text = String(str)
+            secondLabel.text = str
         }
     }
 
