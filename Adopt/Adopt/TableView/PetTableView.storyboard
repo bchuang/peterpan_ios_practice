@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pet Table View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PetTableViewController" customModule="Adopt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vvl-3j-ULR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PetTableViewCell" rowHeight="140" id="zEU-uH-af8" customClass="PetTableViewCell" customModule="Adopt">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zEU-uH-af8" id="ek4-Rv-ERj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MHV-Wd-7W3">
+                                                    <rect key="frame" x="8" y="8" width="120" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="98h-h7-hvV"/>
+                                                        <constraint firstAttribute="width" constant="120" id="oAN-Vv-7U0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUk-Ws-vpG">
+                                                    <rect key="frame" x="166" y="8" width="186" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MHV-Wd-7W3" firstAttribute="top" secondItem="ek4-Rv-ERj" secondAttribute="top" constant="8" id="61d-2c-9bd"/>
+                                                <constraint firstItem="oUk-Ws-vpG" firstAttribute="top" secondItem="MHV-Wd-7W3" secondAttribute="top" id="NYb-Fu-9Tj"/>
+                                                <constraint firstItem="MHV-Wd-7W3" firstAttribute="leading" secondItem="ek4-Rv-ERj" secondAttribute="leading" constant="8" id="Qu2-iS-Bt9"/>
+                                                <constraint firstItem="oUk-Ws-vpG" firstAttribute="leading" secondItem="MHV-Wd-7W3" secondAttribute="trailing" constant="38" id="Saq-Tz-egl"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="oUk-Ws-vpG" secondAttribute="trailing" constant="8" id="Ug1-0S-0s3"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MHV-Wd-7W3" secondAttribute="bottom" constant="8" id="iBh-5y-Paf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="petImage" destination="MHV-Wd-7W3" id="SGW-QZ-a3F"/>
+                                            <outlet property="petName" destination="oUk-Ws-vpG" id="JmQ-hX-tT6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vvl-3j-ULR" secondAttribute="trailing" id="eP2-Wi-lh6"/>
+                            <constraint firstItem="vvl-3j-ULR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g8v-3e-X0Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vvl-3j-ULR" secondAttribute="bottom" id="nke-I0-LOc"/>
+                            <constraint firstItem="vvl-3j-ULR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u9L-CD-OrT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w8P-TJ-Jfv">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Cjs-4c-NCp"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="petTableView" destination="vvl-3j-ULR" id="CgB-VU-86x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="32"/>
+        </scene>
+    </scenes>
+</document>
