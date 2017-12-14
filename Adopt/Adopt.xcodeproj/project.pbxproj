@@ -11,10 +11,10 @@
 		CC78DF3A1FDFC0FC00023173 /* PetTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC78DF391FDFC0FC00023173 /* PetTableView.storyboard */; };
 		CC78DF3E1FDFC2B900023173 /* PetScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC78DF3D1FDFC2B900023173 /* PetScrollView.storyboard */; };
 		CC8212AC1FDFD3D300F4FF4B /* PetScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8212AB1FDFD3D300F4FF4B /* PetScrollViewController.swift */; };
+		CC8212AF1FE128AA00F4FF4B /* Adopt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC8212AD1FE128AA00F4FF4B /* Adopt.xcdatamodeld */; };
+		CC8212B31FE12AE200F4FF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8212B21FE12AE200F4FF4B /* Assets.xcassets */; };
 		CCFEC9461FDE6C0A0039CC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEC9451FDE6C0A0039CC68 /* AppDelegate.swift */; };
 		CCFEC94B1FDE6C0A0039CC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFEC9491FDE6C0A0039CC68 /* Main.storyboard */; };
-		CCFEC94E1FDE6C0A0039CC68 /* Adopt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCFEC94C1FDE6C0A0039CC68 /* Adopt.xcdatamodeld */; };
-		CCFEC9501FDE6C0A0039CC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFEC94F1FDE6C0A0039CC68 /* Assets.xcassets */; };
 		CCFEC9531FDE6C0A0039CC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFEC9511FDE6C0A0039CC68 /* LaunchScreen.storyboard */; };
 		CCFEC95C1FDE74CF0039CC68 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEC95B1FDE74CF0039CC68 /* Pet.swift */; };
 		CCFEC95F1FDEA05B0039CC68 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEC95E1FDEA05B0039CC68 /* MainController.swift */; };
@@ -26,12 +26,12 @@
 		CC78DF391FDFC0FC00023173 /* PetTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PetTableView.storyboard; sourceTree = "<group>"; };
 		CC78DF3D1FDFC2B900023173 /* PetScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PetScrollView.storyboard; sourceTree = "<group>"; };
 		CC8212AB1FDFD3D300F4FF4B /* PetScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetScrollViewController.swift; sourceTree = "<group>"; };
+		CC8212AE1FE128AA00F4FF4B /* Adopt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adopt.xcdatamodel; sourceTree = "<group>"; };
+		CC8212B21FE12AE200F4FF4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCFEC9421FDE6C0A0039CC68 /* Adopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFEC9451FDE6C0A0039CC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFEC9471FDE6C0A0039CC68 /* PetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewController.swift; sourceTree = "<group>"; };
 		CCFEC94A1FDE6C0A0039CC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CCFEC94D1FDE6C0A0039CC68 /* Adopt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adopt.xcdatamodel; sourceTree = "<group>"; };
-		CCFEC94F1FDE6C0A0039CC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCFEC9521FDE6C0A0039CC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCFEC9541FDE6C0A0039CC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCFEC95B1FDE74CF0039CC68 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
@@ -101,10 +101,10 @@
 				CCFEC9451FDE6C0A0039CC68 /* AppDelegate.swift */,
 				CCFEC95E1FDEA05B0039CC68 /* MainController.swift */,
 				CCFEC9491FDE6C0A0039CC68 /* Main.storyboard */,
-				CCFEC94F1FDE6C0A0039CC68 /* Assets.xcassets */,
 				CCFEC9511FDE6C0A0039CC68 /* LaunchScreen.storyboard */,
 				CCFEC9541FDE6C0A0039CC68 /* Info.plist */,
-				CCFEC94C1FDE6C0A0039CC68 /* Adopt.xcdatamodeld */,
+				CC8212B21FE12AE200F4FF4B /* Assets.xcassets */,
+				CC8212AD1FE128AA00F4FF4B /* Adopt.xcdatamodeld */,
 			);
 			path = Adopt;
 			sourceTree = "<group>";
@@ -177,10 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCFEC9531FDE6C0A0039CC68 /* LaunchScreen.storyboard in Resources */,
-				CCFEC9501FDE6C0A0039CC68 /* Assets.xcassets in Resources */,
 				CC78DF3E1FDFC2B900023173 /* PetScrollView.storyboard in Resources */,
 				CC78DF3A1FDFC0FC00023173 /* PetTableView.storyboard in Resources */,
 				CCFEC94B1FDE6C0A0039CC68 /* Main.storyboard in Resources */,
+				CC8212B31FE12AE200F4FF4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,8 +194,8 @@
 				CCFEC95F1FDEA05B0039CC68 /* MainController.swift in Sources */,
 				CCFEC95C1FDE74CF0039CC68 /* Pet.swift in Sources */,
 				CCFEC9461FDE6C0A0039CC68 /* AppDelegate.swift in Sources */,
-				CCFEC94E1FDE6C0A0039CC68 /* Adopt.xcdatamodeld in Sources */,
 				CC8212AC1FDFD3D300F4FF4B /* PetScrollViewController.swift in Sources */,
+				CC8212AF1FE128AA00F4FF4B /* Adopt.xcdatamodeld in Sources */,
 				CCFEC9601FDEA38B0039CC68 /* PetTableViewController.swift in Sources */,
 				CC78DF361FDEAEC000023173 /* PetTableViewCell.swift in Sources */,
 			);
@@ -384,12 +384,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CCFEC94C1FDE6C0A0039CC68 /* Adopt.xcdatamodeld */ = {
+		CC8212AD1FE128AA00F4FF4B /* Adopt.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CCFEC94D1FDE6C0A0039CC68 /* Adopt.xcdatamodel */,
+				CC8212AE1FE128AA00F4FF4B /* Adopt.xcdatamodel */,
 			);
-			currentVersion = CCFEC94D1FDE6C0A0039CC68 /* Adopt.xcdatamodel */;
+			currentVersion = CC8212AE1FE128AA00F4FF4B /* Adopt.xcdatamodel */;
 			path = Adopt.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

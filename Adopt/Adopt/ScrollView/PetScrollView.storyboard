@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vyI-yH-rBm">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="epn-K8-zdl">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,25 +10,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pet Scroll View Controller-->
+        <!--Adopt-->
         <scene sceneID="5PY-oh-j8j">
             <objects>
                 <viewController id="vyI-yH-rBm" customClass="PetScrollViewController" customModule="Adopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y31-jH-06u">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv5-lO-lqH">
-                                <rect key="frame" x="0.0" y="20" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="570"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NO IMAGE" translatesAutoresizingMaskIntoConstraints="NO" id="Z9W-AR-Aw7">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="526"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoImage" translatesAutoresizingMaskIntoConstraints="NO" id="Z9W-AR-Aw7">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="570"/>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Ae5-al-9hh" appends="YES" id="bzk-j3-Or7"/>
-                                        </connections>
                                     </imageView>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="Z9W-AR-Aw7" firstAttribute="top" secondItem="Hv5-lO-lqH" secondAttribute="top" id="GoM-fN-82h"/>
                                     <constraint firstItem="Z9W-AR-Aw7" firstAttribute="leading" secondItem="Hv5-lO-lqH" secondAttribute="leading" id="JsI-96-omj"/>
@@ -39,15 +37,15 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grt-Ii-0DW">
-                                <rect key="frame" x="230" y="555" width="109" height="104"/>
+                                <rect key="frame" x="230" y="666" width="109" height="104"/>
                                 <state key="normal" backgroundImage="Remove"/>
                                 <connections>
                                     <action selector="DropButton:" destination="vyI-yH-rBm" eventType="primaryActionTriggered" id="BV5-Fo-SwU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="258-uF-hxj">
-                                <rect key="frame" x="35" y="555" width="109" height="104"/>
-                                <state key="normal" backgroundImage="Love2"/>
+                                <rect key="frame" x="35" y="666" width="109" height="104"/>
+                                <state key="normal" backgroundImage="Love"/>
                                 <connections>
                                     <action selector="LoveButton:" destination="vyI-yH-rBm" eventType="primaryActionTriggered" id="FRz-To-3xy"/>
                                 </connections>
@@ -70,23 +68,64 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mrh-9j-a3q"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Adopt" id="zG1-IH-ASU">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Back" id="j86-4q-Mk8">
+                            <connections>
+                                <action selector="exit:" destination="vyI-yH-rBm" id="hRt-IL-SIK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Love" id="X6L-GS-huP">
+                            <connections>
+                                <segue destination="X5c-O6-Xcb" kind="show" id="E4H-qe-FOw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="petImage" destination="Z9W-AR-Aw7" id="c16-dM-Ul8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NjG-kT-5QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Ae5-al-9hh">
-                    <connections>
-                        <action selector="SwipeAction:" destination="vyI-yH-rBm" id="c7q-9E-5bN"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-68" y="-107.49625187406298"/>
+            <point key="canvasLocation" x="271.19999999999999" y="-107.49625187406298"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8LC-xH-z1i">
+            <objects>
+                <viewController id="X5c-O6-Xcb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y9o-Bv-j4f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gP4-D6-lUZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9uv-IO-cpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="-107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4qs-yC-AbZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="epn-K8-zdl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GUz-sS-GQZ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vyI-yH-rBm" kind="relationship" relationship="rootViewController" id="GNL-hI-E70"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCV-s9-uJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660" y="-107"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Love2" width="40" height="40"/>
-        <image name="NO IMAGE" width="275" height="275"/>
-        <image name="Remove" width="40" height="40"/>
+        <image name="Back" width="48" height="48"/>
+        <image name="Love" width="80" height="80"/>
+        <image name="NoImage" width="275" height="275"/>
+        <image name="Remove" width="80" height="80"/>
     </resources>
 </document>

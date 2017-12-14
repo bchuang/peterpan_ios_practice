@@ -12,7 +12,6 @@ import CoreData
 
 class PetTableViewController: UIViewController {
     
-    
     //MARK: variables
     var apiPets: [PetData]?
     var dbPets: [Pet]?
@@ -114,6 +113,7 @@ extension PetTableViewController {
                     let context = appDelegate.persistentContainer.viewContext
                     let pet = Pet(context: context)
                     
+                    pet.acceptnum = item.AcceptNum
                     pet.age = item.Age
                     pet.build = item.Build
                     pet.email = item.Email
